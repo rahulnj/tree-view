@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+
+const App=()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<div>
+  <ul class="tree">
+    {/* <!-- Root node (Category) --> */}
+    <li><div class="sticky">Animals</div>
+      <ul>
+
+        {/* <!-- Sub category --> */}
+        <li><div class="sticky">Birds</div></li> 
+        {/* <!-- Second level node --> */}
+        <li><div class="sticky">Mammals</div>
+        
+        </li>
+      </ul>
+    </li>
+
+    <li><div class="sticky">Plants</div>
+      <ul>
+        <li><div class="sticky">Flowers</div></li>
+        <li><div class="sticky">Trees</div></li>
+        <li><div class="sticky">Trees</div></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
   );
 }
 
